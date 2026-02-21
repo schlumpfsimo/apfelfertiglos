@@ -551,7 +551,7 @@
     const demand = { premium: 0, normal: 0, cheap: 0 };
     if (placeId === "market") {
       demand.premium = randomInt(6, 16);
-      demand.normal = randomInt(3, 11);
+      demand.normal = randomInt(3, 6);
     } else if (placeId === "store") {
       demand.premium = randomInt(1, 7);
       demand.normal = randomInt(7, 18);
@@ -1936,6 +1936,7 @@
 </script>
 </body>
 </html>
+
 
 
 
