@@ -1791,8 +1791,8 @@
     // Character Selection
     drawFittedText("WAEHLE DEINE*N FAHRER*IN", 360, 130, 260, COLORS.fg, 14, titleScale);
     
-    const charWidth = 120;
-    const charHeight = 140;
+    const charWidth = 240;
+    const charHeight = 280;
     const charGap = 40;
     const totalWidth = 3 * charWidth + 2 * charGap;
     const startX = (VIEWPORT.width - totalWidth) / 2;
@@ -1819,7 +1819,7 @@
       }
 
       // Large character sprite
-      const drewTitleCharacter = drawAsset(characterAssetId(character.id), x + charWidth / 2, startY + 126, 216, 244, {
+      const drewTitleCharacter = drawAsset(characterAssetId(character.id), x + charWidth / 2, startY + 126, 170, 195, {
         anchorX: 0.5,
         anchorY: 1,
         fit: "contain",
@@ -1936,6 +1936,7 @@
 </script>
 </body>
 </html>
+
 
 
 
