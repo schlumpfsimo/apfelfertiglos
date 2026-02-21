@@ -1786,13 +1786,13 @@
     // Main Title Area
     drawBox(100, 30, 700, 85, COLORS.panel);
     drawFittedText("APFEL, FERTIG, LOS!", 150, 40, 620, COLORS.fg, 32, titleScale);
-    drawFittedText("EIN SCHWEIZER LANDHANDEL-ABENTEUER VON R151 STUDIO", 155, 80, 620, COLORS.muted, 10, titleScale);
+    drawFittedText("EIN SPIEL DES APFELKAPITALISMUS VON R151 STUDIO", 155, 80, 620, COLORS.muted, 10, titleScale);
     
     // Character Selection
     drawFittedText("WAEHLE DEINE*N FAHRER*IN", 360, 130, 260, COLORS.fg, 14, titleScale);
     
-    const charWidth = 240;
-    const charHeight = 280;
+    const charWidth = 120;
+    const charHeight = 140;
     const charGap = 40;
     const totalWidth = 3 * charWidth + 2 * charGap;
     const startX = (VIEWPORT.width - totalWidth) / 2;
@@ -1800,7 +1800,7 @@
 
     const descriptions = {
       lenny: "SCHNELLER FAHRER. SCHWACHES VERHANDLUNGSTALENT",
-      julia: "SORGFAELTIGE FAHRERIN. AUSGEWOGEN.",
+      julia: "SORGFAELTIGE FAHRERIN. ORDNUNGSPROFI. AUSGEWOGEN.",
       simo: "VERHANDLUNGSPROFI. KLEINER WAGEN. KEIN KAPITAL",
     };
     const traitLabels = { low: "NIEDRIG", medium: "MITTEL", high: "HOCH" };
@@ -1936,6 +1936,7 @@
 </script>
 </body>
 </html>
+
 
 
 
