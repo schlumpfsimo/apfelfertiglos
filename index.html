@@ -301,7 +301,7 @@
   ];
 
   const CAPACITY_BY_CARE = { low: 12, medium: 22, high: 30 };
-  const SPEED_BY_TRAIT = { low: 0.7, medium: 1.0, high: 1.55 };
+  const SPEED_BY_TRAIT = { low: 0.8, medium: 1.0, high: 1.55 };
   const SELL_PRICE = {
     market: { low: 6.0, medium: 7.0, high: 8.0 },
     store: { low: 3.0, medium: 5.0, high: 5.5 },
@@ -1789,7 +1789,7 @@
     drawFittedText("EIN SCHWEIZER LANDHANDEL-ABENTEUER VON R151 STUDIO", 155, 80, 620, COLORS.muted, 10, titleScale);
     
     // Character Selection
-    drawFittedText("WAEHLE DEINEN FAHRER*IN", 360, 130, 260, COLORS.fg, 14, titleScale);
+    drawFittedText("WAEHLE DEINE*N FAHRER*IN", 360, 130, 260, COLORS.fg, 14, titleScale);
     
     const charWidth = 240;
     const charHeight = 280;
@@ -1799,9 +1799,9 @@
     const startY = 160;
 
     const descriptions = {
-      lenny: "SCHNELLER FAHRER*IN. SCHWACHE VERHANDLUNG.",
-      julia: "SORGFAELTIGE FAHRER*IN. AUSGEWOGEN.",
-      simo: "VERHANDLUNGSPROFI. KLEINER WAGEN.",
+      lenny: "SCHNELLER FAHRER. SCHWACHES VERHANDLUNGSTALENT",
+      julia: "SORGFAELTIGE FAHRERIN. AUSGEWOGEN.",
+      simo: "VERHANDLUNGSPROFI. KLEINER WAGEN. KEIN KAPITAL",
     };
     const traitLabels = { low: "NIEDRIG", medium: "MITTEL", high: "HOCH" };
 
@@ -1829,9 +1829,9 @@
       drawFittedText(character.name.toUpperCase(), x + 20, startY + 130, 180, COLORS.fg, 18, titleScale);
       
       // Stats
-      drawFittedText(`GESCHW.: ${traitLabels[character.speed]}`, x + 20, startY + 160, 190, COLORS.muted, 10, titleScale);
-      drawFittedText(`VERHANDL.: ${traitLabels[character.negotiation]}`, x + 20, startY + 175, 190, COLORS.muted, 10, titleScale);
-      drawFittedText(`SORGFALT: ${traitLabels[character.care]}`, x + 20, startY + 190, 190, COLORS.muted, 10, titleScale);
+      drawFittedText(`GESCHWINDIGKEIT: ${traitLabels[character.speed]}`, x + 20, startY + 160, 190, COLORS.muted, 10, titleScale);
+      drawFittedText(`VERHANDLUNGSTALENT: ${traitLabels[character.negotiation]}`, x + 20, startY + 175, 190, COLORS.muted, 10, titleScale);
+      drawFittedText(`SORGFALT IM STAPELN: ${traitLabels[character.care]}`, x + 20, startY + 190, 190, COLORS.muted, 10, titleScale);
       
       // Description (shortened to avoid overlap)
       drawFittedText(descriptions[character.id] || "", x + 20, startY + 220, 190, COLORS.fg, 10, titleScale);
@@ -1936,5 +1936,6 @@
 </script>
 </body>
 </html>
+
 
 
