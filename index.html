@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Apfel, fertig, los! - Strukturierte Linien-Version</title>
+<title>Apfel, fertig, los! - R151</title>
 <style>
   :root {
     --bg: #0b0f14;
@@ -1819,7 +1819,7 @@
       }
 
       // Large character sprite
-      const drewTitleCharacter = drawAsset(characterAssetId(character.id), x + charWidth / 2, startY + 126, 170, 195, {
+      const drewTitleCharacter = drawAsset(characterAssetId(character.id), x + charWidth / 2, startY + 126, 108, 122, {
         anchorX: 0.5,
         anchorY: 1,
         fit: "contain",
@@ -1852,7 +1852,7 @@
     ctx.fillStyle = "rgba(0, 0, 0, 0.45)";
     ctx.fillRect(220, 210, 460, 90);
     drawBox(220, 210, 460, 90);
-    drawText("Zeit abgelaufen", 240, 230, COLORS.accent, 18);
+    drawText("DER APFEL IST GEFALLEN", 240, 230, COLORS.accent, 18);
     drawText(`Endstand: ${player.cash.toFixed(2)} CHF`, 240, 258, COLORS.fg, 14);
   }
 
@@ -1936,6 +1936,7 @@
 </script>
 </body>
 </html>
+
 
 
 
